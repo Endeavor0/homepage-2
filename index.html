@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <link rel="Stylesheet" href="Stlyesheet.css">
+    <meta charset="utf-8">
+    <title>My webpage</title>
+    <script>
+        function greet()
+        {
+            let name = document.querySelector('#name').value;
+            if (name === '')
+            {
+                name = 'world';
+            }
+            document.querySelector('#result').innerHTML = 'Hello, ' + name + '!';
+        }
+    </script>
+  </head>
+  <body>
+    <div class="form">
+      <form onsubmit="greet(); return false;">
+          <input type="text" id="name" placeholder="Name">
+          <input type="submit">
+      </form>
+    </div>
+    <div id="result">
+        Hello!
+    </div>
+    <h1>Oliver's webpage</h1>
+  <p>My name is Oliver Haunold, I am a year 9 student at georgiana molloy anglican school and I like technology.</p>
+  <a href="https://www.gmas.wa.edu.au/">My school</a>
+  <h3>A bit about me</h3>
+  <p>I love sport and im a great swimmer and I am part of the Busselton swim club.</p>
+  <p>One day youll hopefully see me in the olympics, because thats what im aiming for.</p>
+  <img src="swim.jpg" alt="swimmer" width="300px" height="180px">
+
+
+</body></html>
